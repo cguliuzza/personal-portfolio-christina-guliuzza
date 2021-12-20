@@ -1,22 +1,23 @@
 import React from 'react'
+import './Accordion.css';
 
 const Accordion = () => {
     return (
         <>
             <section class="ac-container">
-                <div>
-                    <input id="ac-1" name="accordion-1" type="checkbox" />
-                    <label for="ac-1">About us</label>
-                    <article class="ac-small">
-                        <p>Some content... </p>
-                    </article>
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
                 </div>
-                <div>
-                    <input id="ac-2" name="accordion-1" type="checkbox" />
-                    <label for="ac-2">How we work</label>
-                    <article class="ac-medium">
-                        <p>Some content... </p>
-                    </article>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
                 </div>
             </section>
         </>

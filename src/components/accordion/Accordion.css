@@ -1,39 +1,45 @@
+/* white label on hover */
+.ac-container button:hover{
+	background: gray;
+	color: whitesmoke;
+}
 /* accordion width and center it */
 .ac-container {
 	width: 400px;
 	margin: 10px auto 30px auto;
-    background-color: hotpink;
-    color: lawngreen;
-    border: indigo;
 }
 
-/* labels appear as clickable buttons */
-.ac-container label{
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	padding: 5px 20px;
-	position: relative;
-	z-index: 20;
-	display: block;
-	height: 30px;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #eee;
+	color: darkslategray;
 	cursor: pointer;
-	color: #777;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-	line-height: 33px;
-	font-size: 19px;
-	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	box-shadow: 
-		0px 0px 0px 1px rgba(155,155,155,0.3), 
-		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
-		0px 2px 2px rgba(0,0,0,0.1);
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	cursor: pointer;
+	font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
 }
 
-/* white label on hover */
-.ac-container label:hover{
-	background: #fff;
-}
 
 /* label “selected” style on click */
-.ac-container input:checked + label,
+/* .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
 	background: #c6e1ec;
 	color: #3d7489;
@@ -98,7 +104,7 @@
 }
 .ac-container input:checked ~ article.ac-large{
 	height: 230px;
-}
+} */
 
 
 
